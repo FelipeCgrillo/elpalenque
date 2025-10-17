@@ -1,0 +1,109 @@
+INSTRUCCIONES PARA REEMPLAZAR ASSETS
+
+Esta carpeta contiene los archivos multimedia que necesitas reemplazar con contenido real de Cabalgatas El Palenque:
+
+ARCHIVOS PRINCIPALES REQUERIDOS:
+================================
+
+✅ 1. HERO IMAGE - YA CONFIGURADA
+   - Archivo: hero-image.png (ya en uso)
+   - Imagen perfecta del gaucho con turistas a caballo
+   - Captura la esencia auténtica de El Palenque
+   - Paisaje patagónico de fondo con montañas
+   - Transmite inmediatamente la experiencia real
+
+✅ 2. LOGO OFICIAL - YA CONFIGURADO
+   - Archivo: logo.png (ya en uso)
+   - Logo circular con caballo empinado
+   - Paisaje patagónico con montañas y lago
+   - Herradura como marco decorativo
+   - Integrado en header y footer
+   - Iconos PWA generados automáticamente
+
+3. gaucho-portrait.jpg
+   - Foto de Don Carlos Mendoza (o el gaucho líder)
+   - Resolución mínima: 800x1000 píxeles
+   - Formato: JPG de alta calidad
+   - Estilo: Retrato profesional, ambiente rústico
+
+4. route1.jpg - Imagen principal "Laguna Azul"
+   - Paisaje de la laguna o ruta
+   - Resolución mínima: 1200x800 píxeles
+   - Formato: JPG
+
+5. route2.jpg - Imagen principal "Sendero del Cóndor"
+   - Paisaje montañoso o vista panorámica
+   - Resolución mínima: 1200x800 píxeles
+   - Formato: JPG
+
+6. route3.jpg - Imagen principal "Valle Escondido"
+   - Valle verde, ideal para familias
+   - Resolución mínima: 1200x800 píxeles
+   - Formato: JPG
+
+GALERÍA DE IMÁGENES (carpeta gallery/):
+======================================
+
+Para cada ruta, necesitas 5 imágenes adicionales:
+
+Laguna Azul:
+- laguna1.jpg hasta laguna5.jpg
+- Diferentes ángulos y momentos de la ruta
+- Resolución mínima: 1000x700 píxeles
+
+Sendero del Cóndor:
+- condor1.jpg hasta condor5.jpg
+- Paisajes, fauna, vistas panorámicas
+- Resolución mínima: 1000x700 píxeles
+
+Valle Escondido:
+- valle1.jpg hasta valle5.jpg
+- Ambiente familiar, naturaleza, actividades
+- Resolución mínima: 1000x700 píxeles
+
+CONSEJOS PARA LAS FOTOS:
+=======================
+
+1. Usa luz natural (golden hour preferible)
+2. Incluye personas disfrutando las actividades
+3. Muestra la belleza natural de Aysén
+4. Captura la esencia rústica y auténtica
+5. Asegúrate de tener derechos de uso de todas las imágenes
+
+OPTIMIZACIÓN:
+============
+
+Antes de subir las imágenes:
+- Comprime las imágenes (70-80% calidad JPG)
+- Considera usar formato WebP para mejor rendimiento
+- Mantén los nombres de archivo exactos como se especifica
+
+ICONOS PARA PWA (Progressive Web App):
+=====================================
+
+Para que la aplicación web sea instalable, necesitas crear estos iconos:
+
+1. icon-192.png
+   - Tamaño: 192x192 píxeles
+   - Formato: PNG con fondo transparente o sólido
+   - Contenido: Logo de El Palenque o símbolo representativo
+
+2. icon-512.png
+   - Tamaño: 512x512 píxeles
+   - Formato: PNG con fondo transparente o sólido
+   - Contenido: Mismo diseño que el icon-192.png
+
+CAPTURAS DE PANTALLA (OPCIONAL):
+===============================
+
+Para mejorar la experiencia de instalación:
+
+1. screenshot-mobile.png
+   - Tamaño: 390x844 píxeles (iPhone 12 Pro)
+   - Captura de la página en móvil
+
+2. screenshot-desktop.png
+   - Tamaño: 1920x1080 píxeles
+   - Captura de la página en desktop
+
+Una vez que reemplaces estos archivos, la página web mostrará el contenido real de Cabalgatas El Palenque y será instalable como aplicación móvil.

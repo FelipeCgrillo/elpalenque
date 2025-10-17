@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabalgatas El Palenque - Aventura Auténtica en la Patagonia</title>
+    <meta name="description" content="Vive la aventura auténtica de la Patagonia con Cabalgatas El Palenque en Aysén. Rutas únicas guiadas por gauchos locales.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Lora:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2F4538">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="El Palenque">
+    <link rel="apple-touch-icon" href="assets/icon-192.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Cabalgatas El Palenque - Aventura Auténtica en la Patagonia">
+    <meta property="og:description" content="Vive la aventura auténtica de la Patagonia con Cabalgatas El Palenque en Aysén. Rutas únicas guiadas por gauchos locales.">
+    <meta property="og:image" content="assets/gaucho-portrait.jpg">
+    <meta property="og:url" content="https://elpalenque.cl">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cabalgatas El Palenque">
+    <meta name="twitter:description" content="Aventura auténtica en la Patagonia">
+    <meta name="twitter:image" content="assets/gaucho-portrait.jpg">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.png" alt="Cabalgatas El Palenque - Patagonia Chile" class="logo-image">
+                </div>
+                <div class="nav-menu">
+                    <a href="#inicio" class="nav-link" data-es="Inicio" data-en="Home">Inicio</a>
+                    <a href="#historia" class="nav-link" data-es="Historia" data-en="Story">Historia</a>
+                    <a href="#rutas" class="nav-link" data-es="Rutas" data-en="Routes">Rutas</a>
+                    <a href="#ubicacion" class="nav-link" data-es="Ubicación" data-en="Location">Ubicación</a>
+                    <a href="#contacto" class="nav-link" data-es="Contacto" data-en="Contact">Contacto</a>
+                </div>
+                <div class="nav-controls">
+                    <button class="lang-toggle" id="langToggle">
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <button class="nav-toggle" id="navToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-image">
+            <img src="assets/hero-image.png" alt="Gaucho guiando cabalgata en la Patagonia" loading="eager">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-es="Cabalgatas El Palenque" data-en="El Palenque Horse Riding">Cabalgatas El Palenque</h1>
+            <p class="hero-subtitle" data-es="Vive la aventura auténtica de la Patagonia" data-en="Experience the authentic adventure of Patagonia">Vive la aventura auténtica de la Patagonia</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="openContactModal()" data-es="Reservar Ahora" data-en="Book Now">Reservar Ahora</button>
+                <a href="#rutas" class="btn btn-secondary" data-es="Ver Rutas" data-en="View Routes">Ver Rutas</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Historia del Gaucho -->
+    <section id="historia" class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="section-title" data-es="La Historia del Gaucho" data-en="The Gaucho's Story">La Historia del Gaucho</h2>
+                    <div class="story-description">
+                        <p data-es="Don Carlos Mendoza, nacido y criado en las vastas pampas de Aysén, lleva más de 30 años recorriendo estos senderos. Su pasión por los caballos y el profundo conocimiento de la tierra patagónica lo convierten en el guía perfecto para una aventura inolvidable." data-en="Don Carlos Mendoza, born and raised in the vast pampas of Aysén, has been traveling these trails for over 30 years. His passion for horses and deep knowledge of the Patagonian land make him the perfect guide for an unforgettable adventure.">
+                            Don Carlos Mendoza, nacido y criado en las vastas pampas de Aysén, lleva más de 30 años recorriendo estos senderos. Su pasión por los caballos y el profundo conocimiento de la tierra patagónica lo convierten en el guía perfecto para una aventura inolvidable.
+                        </p>
+                        <p data-es="Cada cabalgata es una oportunidad de conectar con la naturaleza más pura, siguiendo las huellas de los antiguos arrieros y descubriendo paisajes que solo los verdaderos conocedores de la región pueden mostrar." data-en="Each horse ride is an opportunity to connect with the purest nature, following the footsteps of ancient drovers and discovering landscapes that only true connoisseurs of the region can show.">
+                            Cada cabalgata es una oportunidad de conectar con la naturaleza más pura, siguiendo las huellas de los antiguos arrieros y descubriendo paisajes que solo los verdaderos conocedores de la región pueden mostrar.
+                        </p>
+                    </div>
+                    <div class="story-stats">
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label" data-es="Años de Experiencia" data-en="Years of Experience">Años de Experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label" data-es="Aventureros Guiados" data-en="Adventurers Guided">Aventureros Guiados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label" data-es="Rutas Únicas" data-en="Unique Routes">Rutas Únicas</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-image">
+                    <img src="assets/gaucho-portrait.jpg" alt="Don Carlos Mendoza" class="gaucho-image">
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rutas Section -->
+    <section id="rutas" class="routes-section">
+        <div class="container">
+            <h2 class="section-title" data-es="Nuestras Rutas" data-en="Our Routes">Nuestras Rutas</h2>
+            <div class="routes-grid">
+                <!-- Ruta 1 -->
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="assets/route1.jpg" alt="Ruta Laguna Azul">
+                        <div class="route-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('route1')" data-es="Ver Galería" data-en="View Gallery">Ver Galería</button>
+                        </div>
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title" data-es="Laguna Azul" data-en="Blue Lagoon">Laguna Azul</h3>
+                        <div class="route-info">
+                            <span class="route-duration"><i class="fas fa-clock"></i> <span data-es="4 horas" data-en="4 hours">4 horas</span></span>
+                            <span class="route-difficulty"><i class="fas fa-mountain"></i> <span data-es="Intermedio" data-en="Intermediate">Intermedio</span></span>
+                        </div>
+                        <p class="route-description" data-es="Una travesía mágica hacia la cristalina Laguna Azul, rodeada de montañas nevadas y bosques nativos. Ideal para quienes buscan paisajes únicos y fotografías inolvidables." data-en="A magical journey to the crystal-clear Blue Lagoon, surrounded by snow-capped mountains and native forests. Ideal for those seeking unique landscapes and unforgettable photographs.">
+                            Una travesía mágica hacia la cristalina Laguna Azul, rodeada de montañas nevadas y bosques nativos. Ideal para quienes buscan paisajes únicos y fotografías inolvidables.
+                        </p>
+                        <button class="btn btn-outline" onclick="openContactModal('Laguna Azul')" data-es="Reservar Ruta" data-en="Book Route">Reservar Ruta</button>
+                    </div>
+                </div>
+
+                <!-- Ruta 2 -->
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="assets/route2.jpg" alt="Sendero del Cóndor">
+                        <div class="route-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('route2')" data-es="Ver Galería" data-en="View Gallery">Ver Galería</button>
+                        </div>
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title" data-es="Sendero del Cóndor" data-en="Condor Trail">Sendero del Cóndor</h3>
+                        <div class="route-info">
+                            <span class="route-duration"><i class="fas fa-clock"></i> <span data-es="6 horas" data-en="6 hours">6 horas</span></span>
+                            <span class="route-difficulty"><i class="fas fa-mountain"></i> <span data-es="Avanzado" data-en="Advanced">Avanzado</span></span>
+                        </div>
+                        <p class="route-description" data-es="Para los más aventureros, este sendero lleva a miradores espectaculares donde es posible avistar cóndores en su hábitat natural. Una experiencia que conecta con la esencia salvaje de la Patagonia." data-en="For the most adventurous, this trail leads to spectacular viewpoints where it's possible to spot condors in their natural habitat. An experience that connects with the wild essence of Patagonia.">
+                            Para los más aventureros, este sendero lleva a miradores espectaculares donde es posible avistar cóndores en su hábitat natural. Una experiencia que conecta con la esencia salvaje de la Patagonia.
+                        </p>
+                        <button class="btn btn-outline" onclick="openContactModal('Sendero del Cóndor')" data-es="Reservar Ruta" data-en="Book Route">Reservar Ruta</button>
+                    </div>
+                </div>
+
+                <!-- Ruta 3 -->
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="assets/route3.jpg" alt="Valle Escondido">
+                        <div class="route-overlay">
+                            <button class="view-gallery-btn" onclick="openGallery('route3')" data-es="Ver Galería" data-en="View Gallery">Ver Galería</button>
+                        </div>
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title" data-es="Valle Escondido" data-en="Hidden Valley">Valle Escondido</h3>
+                        <div class="route-info">
+                            <span class="route-duration"><i class="fas fa-clock"></i> <span data-es="2 horas" data-en="2 hours">2 horas</span></span>
+                            <span class="route-difficulty"><i class="fas fa-mountain"></i> <span data-es="Principiante" data-en="Beginner">Principiante</span></span>
+                        </div>
+                        <p class="route-description" data-es="Perfecta para familias y principiantes. Un recorrido suave por praderas verdes y arroyos cristalinos, donde los niños pueden aprender sobre la flora y fauna local en un ambiente seguro." data-en="Perfect for families and beginners. A gentle tour through green meadows and crystal streams, where children can learn about local flora and fauna in a safe environment.">
+                            Perfecta para familias y principiantes. Un recorrido suave por praderas verdes y arroyos cristalinos, donde los niños pueden aprender sobre la flora y fauna local en un ambiente seguro.
+                        </p>
+                        <button class="btn btn-outline" onclick="openContactModal('Valle Escondido')" data-es="Reservar Ruta" data-en="Book Route">Reservar Ruta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación Section -->
+    <section id="ubicacion" class="location-section">
+        <div class="container">
+            <h2 class="section-title" data-es="Cómo Llegar" data-en="How to Get Here">Cómo Llegar</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-details">
+                        <h3 data-es="Nuestra Ubicación" data-en="Our Location">Nuestra Ubicación</h3>
+                        <p data-es="Nos encontramos en el corazón de la región de Aysén, a solo 45 minutos de Coyhaique por la Ruta X-25. Nuestro rancho está ubicado en un entorno privilegiado con acceso directo a los mejores senderos de la Patagonia." data-en="We are located in the heart of the Aysén region, just 45 minutes from Coyhaique via Route X-25. Our ranch is located in a privileged environment with direct access to the best trails in Patagonia.">
+                            Nos encontramos en el corazón de la región de Aysén, a solo 45 minutos de Coyhaique por la Ruta X-25. Nuestro rancho está ubicado en un entorno privilegiado con acceso directo a los mejores senderos de la Patagonia.
+                        </p>
+                        <div class="location-items">
+                            <div class="location-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong data-es="Dirección" data-en="Address">Dirección</strong>
+                                    <p>Km 45, Ruta X-25, Aysén, Chile</p>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <i class="fas fa-car"></i>
+                                <div>
+                                    <strong data-es="Desde Coyhaique" data-en="From Coyhaique">Desde Coyhaique</strong>
+                                    <p data-es="45 minutos en auto" data-en="45 minutes by car">45 minutos en auto</p>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <i class="fas fa-plane"></i>
+                                <div>
+                                    <strong data-es="Aeropuerto más cercano" data-en="Nearest Airport">Aeropuerto más cercano</strong>
+                                    <p data-es="Aeropuerto Balmaceda (1 hora)" data-en="Balmaceda Airport (1 hour)">Aeropuerto Balmaceda (1 hora)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <div id="map" class="map-container">
+                        <!-- Mapa se cargará aquí -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Cabalgatas El Palenque" class="footer-logo-image">
+                    </div>
+                    <p data-es="Aventura auténtica en la Patagonia" data-en="Authentic adventure in Patagonia">Aventura auténtica en la Patagonia</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-es="Contacto" data-en="Contact">Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +56 9 8765 4321</p>
+                    <p><i class="fas fa-envelope"></i> info@elpalenque.cl</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Aysén, Chile</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-es="Horarios" data-en="Hours">Horarios</h4>
+                    <p data-es="Lunes a Domingo: 8:00 - 18:00" data-en="Monday to Sunday: 8:00 - 18:00">Lunes a Domingo: 8:00 - 18:00</p>
+                    <p data-es="Reservas: 24/7" data-en="Reservations: 24/7">Reservas: 24/7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cabalgatas El Palenque. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2 data-es="Reserva tu Aventura" data-en="Book Your Adventure">Reserva tu Aventura</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name" data-es="Nombre Completo" data-en="Full Name">Nombre Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-es="Correo Electrónico" data-en="Email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" data-es="Teléfono" data-en="Phone">Teléfono</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="route" data-es="Ruta de Interés" data-en="Route of Interest">Ruta de Interés</label>
+                    <select id="route" name="route">
+                        <option value="" data-es="Selecciona una ruta" data-en="Select a route">Selecciona una ruta</option>
+                        <option value="laguna-azul" data-es="Laguna Azul" data-en="Blue Lagoon">Laguna Azul</option>
+                        <option value="sendero-condor" data-es="Sendero del Cóndor" data-en="Condor Trail">Sendero del Cóndor</option>
+                        <option value="valle-escondido" data-es="Valle Escondido" data-en="Hidden Valley">Valle Escondido</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date" data-es="Fecha Preferida" data-en="Preferred Date">Fecha Preferida</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="guests" data-es="Número de Personas" data-en="Number of Guests">Número de Personas</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20">
+                </div>
+                <div class="form-group">
+                    <label for="message" data-es="Mensaje Adicional" data-en="Additional Message">Mensaje Adicional</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-es="Enviar Solicitud" data-en="Send Request">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="modal gallery-modal">
+        <div class="modal-content gallery-content">
+            <span class="close" onclick="closeGallery()">&times;</span>
+            <div class="gallery-container">
+                <div class="gallery-main">
+                    <img id="galleryMainImage" src="" alt="">
+                    <button class="gallery-nav prev" onclick="prevImage()"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery-nav next" onclick="nextImage()"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="gallery-thumbnails" id="galleryThumbnails">
+                    <!-- Thumbnails will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/56987654321" class="whatsapp-float" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text" data-es="¡Escríbenos!" data-en="Message us!">¡Escríbenos!</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize map when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initMap();
+        });
+    </script>
+</body>
+</html>
