@@ -236,12 +236,12 @@ function openContactModal(routeName = '') {
     if (routeName) {
         // Set the route based on the button clicked
         const routeMap = {
-            'Laguna Azul': 'laguna-azul',
-            'Blue Lagoon': 'laguna-azul',
-            'Sendero del Cóndor': 'sendero-condor',
-            'Condor Trail': 'sendero-condor',
-            'Valle Escondido': 'valle-escondido',
-            'Hidden Valley': 'valle-escondido'
+            'Miradores del Lago General Carrera': 'miradores-lago',
+            'General Carrera Lake Viewpoints': 'miradores-lago',
+            'Aventura al Ventisquero Tronador': 'ventisquero-tronador',
+            'Tronador Glacier Adventure': 'ventisquero-tronador',
+            'Senderos de Arrieros': 'senderos-arrieros',
+            'Drover Trails': 'senderos-arrieros'
         };
         
         const routeValue = routeMap[routeName] || '';
@@ -506,35 +506,59 @@ function showNotification(message, type = 'info') {
 function initMap() {
     const mapContainer = document.getElementById('map');
     if (mapContainer) {
-        // This is a placeholder for map integration
-        // In a real application, you would integrate with Google Maps, OpenStreetMap, etc.
+        // Mapa incrustado de Google Maps con coordenadas exactas
         mapContainer.innerHTML = `
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; color: white; text-align: center;">
-                <i class="fas fa-map-marker-alt" style="font-size: 3rem; margin-bottom: 1rem; color: #D2691E;"></i>
-                <h3 style="margin-bottom: 0.5rem;">Mapa Interactivo</h3>
-                <p>Km 45, Ruta X-25, Aysén, Chile</p>
-                <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 1rem;">
-                    ${currentLanguage === 'es' 
-                        ? 'Mapa se cargará con la integración de Google Maps' 
-                        : 'Map will load with Google Maps integration'}
-                </p>
-            </div>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000!2d-72.477512!3d-46.734703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDQ0JzA0LjkiUyA3MsKwMjgnMzkuMCJX!5e1!3m2!1ses!2scl!4v1635000000000!5m2!1ses!2scl&q=-46.734703,-72.477512"
+                width="100%" 
+                height="100%" 
+                style="border:0; border-radius: 15px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Vista satelital de Cabalgatas El Palenque en Mallín Grande">
+            </iframe>
         `;
         
         // Example of how you would integrate Google Maps:
         /*
         const map = new google.maps.Map(mapContainer, {
-            center: { lat: -45.5736, lng: -72.0666 }, // Approximate coordinates for Aysén
-            zoom: 10,
+            center: { lat: -46.734703, lng: -72.477512 }, // Coordenadas exactas de Mallín Grande
+            zoom: 12,
             styles: [
                 // Custom map styling for rustic theme
+                {
+                    "featureType": "all",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#2F4538"}]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#1565C0"}]
+                }
             ]
         });
         
         const marker = new google.maps.Marker({
-            position: { lat: -45.5736, lng: -72.0666 },
+            position: { lat: -46.734703, lng: -72.477512 },
             map: map,
-            title: 'Cabalgatas El Palenque'
+            title: 'Cabalgatas El Palenque - Mallín Grande'
+        });
+        
+        const infoWindow = new google.maps.InfoWindow({
+            content: `
+                <div style="padding: 10px;">
+                    <h3>Cabalgatas El Palenque</h3>
+                    <p>Predio Leon S/N, Mallín Grande</p>
+                    <p>Chile Chico, Región de Aysén</p>
+                    <p><strong>Tel:</strong> +56 9 92936382</p>
+                </div>
+            `
+        });
+        
+        marker.addListener('click', () => {
+            infoWindow.open(map, marker);
         });
         */
     }
